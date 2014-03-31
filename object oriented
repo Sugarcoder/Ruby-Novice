@@ -1,0 +1,41 @@
+# "person_instance" is a VARIABLE.
+# "Person" is a CLASS.
+# attr = attribute (Ex. age, gender)
+# accessor = Makes the attributes accessible
+# end = Tells Ruby I am done defining this
+# puts = Automatically moves the output cursor to the next line
+# inheritance = Allows different classes to relate to one another and group concepts by their similarities.
+# Ex. Put "Cats", "Dogs", "Pandas" into one class (Pets). Allows the other animals to "inherit" the features that all pets have.
+
+
+
+class Person 
+attr_accessor :name, :age, :gender
+end
+ 
+ 
+person_instance = Person.new
+
+
+
+person_instance.name = "Princess Bubblegum"
+person_instance.age = 16
+person_instance.gender = "female"
+
+
+
+puts person_instance.name
+
+
+
+
+class Peppermint
+attr_accessor :name, :color, :texture
+end
+
+
+class Cotton
+att_accessor :name, :color, :texture
+
+
+

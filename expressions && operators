@@ -1,0 +1,106 @@
+5
+
+1+7
+
+"a" + "b"
+
+100-5 * (2*1)
+
+x=3
+y=4
+puts x+y
+
+
+
+age = 12
+puts "You're too young to buy R13 movie tickets."  if age < 12
+
+
+age = 18
+puts "You are not an adult yet." if age > 13 && age < 18
+
+
+age = 21 
+puts "You are 21 years old, so you can drink now!" if age == 21
+
+
+
+
+# > Greater than
+# < Less than
+# == Equal
+# >= Greater than or equal to
+# <= Less than or equal to
+# <=> Comparison; return 0 if x and y are equal, 1 if x is higher and -1 is y is higher. 
+# != Not equal to
+
+
+
+# || This is the pipe symbol. Can use to check if something is true. 
+
+
+
+gender = "male" 
+age = 18
+puts "You are a MAN now!" if gender == "male" && age > 18
+
+
+
+5.times { puts "Candy" } 
+
+
+
+10.upto(20) { "Chocolate" }
+10.downto(5) { "Gummy" } 
+
+
+
+1.upto(5) { |number| puts number} 
+
+# The below works the same as the above.
+
+
+1.upto(5) do |number| 
+end
+
+
+
+
+# "f" = floating
+
+x = 10 
+y = 3
+puts x.to_f / y.to_f 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

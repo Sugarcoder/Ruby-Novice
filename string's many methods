@@ -1,0 +1,11 @@
+# Using different methods for the string "Test":
+  # "Test" + "Test" = TestTest
+  # "Test".upcase = TEST
+  # "Test".downcase = test
+  # "Test".chop = Tes
+  # "Test".next = Tesu
+  # "Test".reverse = Tset
+  # "Test".sum = 415
+  # "Test".swapcase = tEST
+  # "Test".upcase.reverse = TSET
+  # "Test".upcase.reverse.next = TSEU

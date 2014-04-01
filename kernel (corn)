@@ -1,0 +1,19 @@
+puts "Hello, world!"
+
+# Kernel = a special type of class packed full of standard, commonly used methods, making codes easier to read and write.
+# Ex. "puts" is a method from the Kernel module.
+
+
+# "1.puts" = a kernel method included and searched by default, so you don't need to use "kernel.puts".
+
+# "2.puts" = takes only one argument (a discrete item of data passed to a method - aka "parameter") and rarely followed by other methods or logic, so parentheses are not strictly necessary.
+ 
+ 
+ 
+# All of these lines of code are functionally equivalent:
+# Kernel.puts("Hello, world!")
+# Kernel.puts "Hello, world!"
+# puts("Hello, world!")
+# puts "Hello, world!"
+
+# The data above ("hello, world") is being passed to Kernel.puts but each style is different.

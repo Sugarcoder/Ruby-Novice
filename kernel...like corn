@@ -1,0 +1,4 @@
+puts "Hello, world!"
+
+# Kernel = a special type of class packed full of standard, commonly used methods, making codes easier to read and write.
+# Ex. "puts" is a method from the Kernel module.

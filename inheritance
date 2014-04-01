@@ -1,0 +1,62 @@
+# inheritance = Allows different classes to relate to one another and group concepts by their similarities.
+# Ex. Put "Cats", "Dogs", "Pandas" into one class (Pets). Allows the other animals to "inherit" the features that all pets have.
+# "<" = Refers to which class it is inherited from
+
+class Pet
+  attr_accessor :name, :age, :gender, :color
+end
+
+
+
+class Cat < Pet
+end
+
+
+class Dog < Pet
+  def bark
+    puts "Woof!"
+  end
+end
+
+
+class Panda < Pet
+end
+
+
+class Snake < Pet
+  attr_accessor :length   # The snake has a length attribute
+  end
+  
+  
+
+# Cat, Dog, Panda  is only "name, gender, color". Snake is all of those AND length.
+
+
+
+
+snake = Snake.new
+snake.name = "Finn"
+snake.length = 500
+snake.age = 13
+lassie = Dog.new
+lassie.name = "Jake"
+lassie.age = "unknown"
+
+
+
+# Methods make objects perform actions. Ex. Dogs barking.
+# def = Defining the method (ex. def bark)
+
+
+# Now the dog can bark after the method is noted!
+
+class Dog < Pet
+  def bark
+    puts "Woof!"
+  end
+end
+
+
+a_dog = Dog.new
+a_dog.bark
+

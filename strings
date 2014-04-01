@@ -1,0 +1,38 @@
+# All strings in Ruby are objects of the "String" class.
+# Ex. puts "Hello, Princess".class
+
+
+x = "Love"
+y = "you"
+puts "I love you" if x + y == "Loveyou"
+
+
+
+# This is how you include multiple lines of text. 
+
+x = %q{My name is Princess Ruby
+and I rule all of Ruby Kingdom!}
+
+
+# you can also use < >, ( ), and ! ! instead of { }.
+
+
+# If you use "<<", then it will come out with each word beginning with \n.
+
+# Example: 
+x = <<TEST_ONLY
+This is only 
+a test.
+TEST_ONLY
+
+
+
+# You can also multiply or use operators for strings.
+
+# Example:
+puts "Candy" * 5
+puts "x" > "y"     # Answer is False
+puts "y" > "x"     # Answer is True
+
+
+

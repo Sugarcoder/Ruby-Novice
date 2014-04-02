@@ -1,0 +1,68 @@
+# Examples of basic arrays:
+
+x = [1,2,3,4]     # This array has 4 elements, and each element is an integer.
+puts x[2]         # The answer is "3", because the Ruby index in an array starts at 0. Therefore, the index is 3.
+
+x[2] += 1
+puts x[2]      # The answer is "4", because the index is 3. If 3 += 1, then the answer is 4.
+
+
+x[1] = "candy" * 3       # The answer is "candycandycandy"
+puts x[1]                # The answer is candycandycandy
+
+
+x = ["candy","cane"] 
+puts x[1]      # The answer is "cane" based on the index of that word.
+
+
+
+
+# Arrays don't need to be set up with predefined entries or have elements allocated already.
+
+# For example: 
+
+x = [ ] 
+x << "Chocolate"
+x << "chip"           # Now, x will be "x = ["Chocolate", "chip"]
+
+
+# I "pushed" the words CHOCOLATE and CHIP into the array.
+
+
+puts x.pop   # Answer could either be "chocolate" or "chip" 
+
+# One of the integers are popped out and no longer in the string after you call "pop".
+
+
+puts x.length    
+
+# The answer is 2 (because there are two integers).
+
+
+
+
+# puts x.join = puts 2 integers together.
+
+# Example: 
+
+x = ["candy", "land"]
+puts x.join     # Answer is "candyland"
+
+
+
+
+
+# puts x.join (',')
+
+# Example:
+
+x = ["bunnies", "chicks"]
+puts x.join (', ')        # Answer is "bunnies, chicks"
+
+
+
+
+
+
+
+

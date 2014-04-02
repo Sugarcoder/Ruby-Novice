@@ -1,7 +1,8 @@
 # Examples of basic arrays:
 
-x = [1,2,3,4]     # This array has 4 elements, and each element is an integer.
+x = [1,2,3,4]     # This array has 4 elements, and each element is an integer. Integer means "numbers"
 puts x[2]         # The answer is "3", because the Ruby index in an array starts at 0. Therefore, the index is 3.
+
 
 x[2] += 1
 puts x[2]      # The answer is "4", because the index is 3. If 3 += 1, then the answer is 4.
@@ -31,12 +32,12 @@ x << "chip"           # Now, x will be "x = ["Chocolate", "chip"]
 
 puts x.pop   # Answer could either be "chocolate" or "chip" 
 
-# One of the integers are popped out and no longer in the string after you call "pop".
+# One of the elements are popped out and no longer in the string after you call "pop".
 
 
 puts x.length    
 
-# The answer is 2 (because there are two integers).
+# The answer is 2 (because there are two elements).
 
 
 

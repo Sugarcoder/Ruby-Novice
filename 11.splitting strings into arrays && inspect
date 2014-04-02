@@ -1,0 +1,42 @@
+# This example shows that the string is split into an array.
+
+puts "Adventure Time".scan(/\w/).join(',')
+
+# The answer is "A,d,v,e,n,t,u,r,e,t,i,m,e"
+
+
+
+# This example shows how to split a string into multiple pieces.
+
+puts "Eat. Sleep. Dream.".split(/\./).inspect        # The answer is "Eat", "Sleep", "Dream"
+
+
+# Using "." in the regular expression means that you are splitting the string up each time you see "." 
+# \. = This symbol means splitting each period
+
+# INSPECT method is common in Ruby and gives you a textual representation of the object.
+# Inspect is useful for expermenting and debugging.
+
+
+# Split = Literally splits on newlines or multiple characters at once.
+
+
+
+# Example:
+
+puts "Adventure Time".split(/\s+/).inspect        # The answer is ["Adventure", "Time"]
+
+
+
+
+# Another way to inspect a string is use "p".
+
+# Example: 
+
+p "Good night moon".split(/\s+/).inspect      
+
+# The answer is [\"Good\", \"night\", \"moon\"]
+
+
+
+

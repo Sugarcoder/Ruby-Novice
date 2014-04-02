@@ -1,5 +1,0 @@
-# This example shows that the string is split into an array.
-
-puts "Adventure Time".scan(/\w/).join(',')
-
-# The answer is "A,d,v,e,n,t,u,r,e,t,i,m,e"

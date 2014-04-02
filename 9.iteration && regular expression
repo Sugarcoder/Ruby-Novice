@@ -1,0 +1,105 @@
+# Below is an example of how to scan for letters that you want in a string.
+# It's like Google Search.
+
+"jkl".scan(/./) {|letter| puts letter}     # Answer is jkl
+
+
+# If you just scan for a letter (Ex. "x")
+
+"An apple a day".scan(/../) { |x| puts x}
+
+OR 
+
+"An apple a day".scan(/\w\w/) { |x| puts x} 
+
+
+# Both of them will run fine, but it will not show the result in IRB for some reason. 
+
+
+# There are special characters with backslashes within Regular Expressions:
+
+# ^ = For the beginning of a line
+# $ = For the end of a line
+# \A = For the start of a string
+# \z = For the end of a string
+# . = Any character
+# \w = Any letter, digit or underscore
+# \W = Anything that \w doesn't match
+# \d = Any digit
+# \D = Anything that \d doesn't match (non-digits)
+# \s = Whitespace (spaces, tabs, newlines, etc.)
+# \S = Non-whitespace (any visible characters)
+
+
+# Example of scanning for a digit:
+
+"Bakery macarons cost $40 for 12 pieces. That's insane!".scan(/\d/) do |x|   # The answer is 1 0 0 1 2
+puts x
+end
+
+
+
+# Example of only pulling a-m letters:
+
+"Do you want to eat macarons?".scan(/[a-m]/) { |x| puts x }     # The answer is a e a m a c a
+
+
+
+
+# Example of only pulling vowels (aeiou): 
+
+"We like to party".scan(/[aeiou]) { |x| puts x}
+
+
+
+
+# Below is about shortcuts to scanning strings.
+# =~ returns the position of the first match,.
+
+
+puts "This string has vowels" if "Candy Land" =~ /{aeiou]/     # The answer is "This string has vowels" if no syntax error.
+
+
+puts "This string has digits" if "99 bottles of beer on the wall..." =~ /[0-9]/
+
+
+
+
+# Below is about MATCHING. 
+# (  ) = The data matched by that section is made available separately from the rest.
+
+
+# Example of matching:
+
+x = "There is always traffic on highway 101".match (/(\w+) (\w+) (\w+)/)
+puts x[0]     # The answer is "There is always"
+puts x[1]     # The answer is "There"
+puts x[2]     # The answer is "is"
+puts x[3]     # The answer is "always"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

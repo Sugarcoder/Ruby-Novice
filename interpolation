@@ -1,0 +1,22 @@
+x = 10
+y = 20 
+puts "#{x} + #{y} = #{x + y}"
+
+
+# The answer will show 10 + 20 = 30
+
+
+# Interpolation = basically where you can embed expressions (and even logic) directly into strings.
+# Put the expression within the #{ }
+
+
+x = "Adventure Time with"
+puts "#{x} with Finn and Jake."
+
+
+x = "sweet"
+puts "It's a #{"sweet " * 2}world." 
+
+
+my_string = "Finn is a human and Jake is a dog."
+puts my_string

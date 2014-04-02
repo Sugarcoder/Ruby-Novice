@@ -1,0 +1,21 @@
+# Regular expression = a search query, a string that describes a pattern for matching elements in other strings.
+# Example:
+puts "candybar".sub('bar', 'candy')   # The answer is: candycandy
+
+
+# sub = substitutes the first instance of the parameter (bar) with the second parameter (candy).
+
+# This example deletes information:
+
+puts "Happy happy joy joy!".gsub('a', '')   # The answer is: hppy hppy joy joy!
+
+
+# Example of replacing a word with another word:
+
+x = " Adventure Time, c'mon grab your friends..."
+puts x.sub(/^../, 'Candy')
+
+puts x.sub(/..$/, 'Candy')     # This changes the last two letters of the string. 
+
+# / = Forward slashes are used to start and end an expression.
+

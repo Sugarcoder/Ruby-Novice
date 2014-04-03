@@ -1,0 +1,243 @@
+# Hashes are collections of objects. 
+# Objects within a hash are given a key that points to them (like a dictionary).
+# There is no specific order, but has links between keys and values. 
+
+
+# Example:
+
+candy = { 'peach rings' => 'gummy', 'gummy bears' => 'gummy'}
+puts candy.size      # Answer will be 2 
+
+
+
+
+# You can even change the name of the element in the array with a hash:
+
+candy['peach rings'] = 'sweet'         
+puts candy['peach rings']            # Answer is "sweet"
+
+
+
+# Notes:
+
+# Both keys and values can be objects of any type.
+# You can use an array or even another hash as a key. 
+
+
+
+
+# ITERATION in Hashes (Example):
+
+x = { "apple" => 1, "banana" => 2}
+x.each { |key, value| puts "#{key} equals #{value}" }    # Key and Value are variables.
+
+# Answer will be #{key} equals 1, #{value} equals 2.
+
+
+
+
+
+# TO SEE THE A HASH IMMEDIATELY:
+
+x = {"a" => 1, "b" => 2, "c" => 3}
+p x.keys    
+
+# Answer will be ["a", "b", "c"]
+
+
+
+
+
+
+# DELETING Hashes:
+
+x = {"a" => 2, "b" => 2, "c" => 3}
+x.delete("b")
+p x
+
+
+# Answer will be {"a" => 2, "c" => 3}
+
+
+
+
+
+
+# DELETING A SPECIFIC HASH:
+
+x = {"apple" => 100, "banana" => 20}
+x.delete_if { |key, value| value < 25}
+
+# Answer will be {"apple" => 100}, since "banana" is under 25.
+
+
+
+
+
+
+# HASHES WITHIN HASHES (like a class within a class):
+
+# You can have hashes within hashes, and arrays within hashes. 
+# Everything in Ruby is an object, so any hash or array could contain any other objects. 
+
+
+# Example: 
+
+Candy_Kingdom = {
+
+'Princess' => {
+  'name' => 'Princess Bubblegum',
+  'age' => 16, 
+  'gender' => 'female'},
+  
+'Hero' => {
+  'name' => 'Finn',
+  'age' => 13,
+  'gender' => 'male'}
+
+}
+
+
+
+# Answer will be {"Princess"=>{"name"=>"Princess Bubblegum", "age"=>16, "job"=>"princess"}, 
+# "Hero"=>{"name=>"Finn", "age"=>13, "job"=>"Hero"}}
+
+
+
+puts Candy_Kingdom['Hero']['age']    
+
+# Answer will be 13  (This is asking for the Hero's age.)
+
+
+
+puts Candy_Kingdom['Princess']['name']  
+
+# Answer will be Princess Bubblegum (This is asking for the Princess' name.)
+
+
+
+p Candy_Kingdom['Princess']           
+
+# Answer will be {"name"=>"Princess Bubblegum", "age"=>16, "job"=>"princess"}   (This will call out everything in the class.
+
+
+
+
+
+# This counts the length of the elements you ran:
+
+puts Candy_Kingdom['Princess']['name'].length 
+
+# Answer will be 18, because "Princess Bubblegum" contains 18 elements (including the space).
+
+
+
+
+
+
+# If you want to join a few elements together, then use ".join".
+
+# Example: 
+
+puts Candy_Kingdom['Princess']['Favorite candies'].join(",")      
+
+# (Assuming "Favorite candies" showed Peppermint, Marshmallow and Bubblegum.)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

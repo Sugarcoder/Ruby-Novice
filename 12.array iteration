@@ -1,0 +1,19 @@
+# Iterating arrays uses the "each" method.
+
+# "Each" method goes through each element of the array and passes it as a parameter to the code block you entered.
+
+# Examples: 
+
+[1, "test", 2,3,4].each { |element| puts element.to_s + "X"}     
+# The answer will be " 1X  testX  2X  3X  4X
+
+
+[1,2,3,4].collect { |element| element * 2}  
+# The answer will be [2,4,6,8]
+
+
+
+
+
+
+

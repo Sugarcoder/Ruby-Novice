@@ -1,0 +1,117 @@
+# "If" and "Unless" is used to perform difference operations based on their circumstances.
+
+
+# Example of IF:
+
+age = 10 
+puts "You are not an adult yet." if age < 18
+end
+
+# Answer will be "You are not an adult yet."
+
+
+
+
+age = 15
+puts "You are still a teenager." if age > 12 && age < 18
+end 
+
+
+# Answer will be "You are still a teenager." 
+
+
+
+
+
+
+
+# UNLESS (Unless you want something else to happen): 
+
+
+# If you put "exit" before "end", the program will close itself. 
+
+# Examples: 
+
+
+age = 20
+unless age >= 21
+puts "You are not 21 yet."
+puts "Therefore, you cannot drink alcohol, so we will close this program now. Good bye."
+exit
+end
+
+
+
+
+
+age = 19
+  if age < 21
+  puts "You are not old enough to drink in the U.S."
+
+  if age > 21
+  puts "You are old enough to drink in the U.S. Go party!"
+  end 
+end
+
+# Answer will be "You are not old enough to drink in the U.S." because age is 19.
+
+
+
+
+
+
+
+# IF and UNLESS also supply the ELSE condition.
+# Example: 
+
+age = 17
+if age < 18
+puts "You are not 18 yet."
+else 
+puts "You are over 18."
+end
+
+# Answer will be "You are not 18 yet." 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

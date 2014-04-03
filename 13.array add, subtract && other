@@ -1,0 +1,86 @@
+# If you have 2 arrays, you can combine them into one. Oh, joy!
+
+x = [1,2,3]
+y = ["a", "b", "c"]
+z = x + y     # OR you can do "z = x - y" and it will subtract
+
+p z            # Answer will be [1, 2, 3, "a", "b", "c"]
+
+
+
+
+
+# To check if an array is empty or not:
+
+x = []
+puts "x is empty" if x.empty?      # Answer will be "x is empty because nothing is in [ ].
+
+
+
+
+# To check if a certain element is in the string:
+
+x = [1,2,3]
+p x.include?("a")   # Answer is FALSE because there is no "a" in the string.
+p x.include?(3)      # Answer is TRUE because 3 is in the string.
+
+
+
+
+
+# To access the first and last element in the array: 
+
+x = ["candy, land"]
+puts x.first           # Answer is "candy"
+puts x.last            # Answer is "land"
+
+
+
+
+# This example passes a numeric parameter from the start to the end.
+# You'll get the number of items from the start to end of the array:
+
+x = [1,2,3,4,5]
+puts x.first(4).join("-")        
+
+
+# Answer will be 1-2-3-4, because you are asking for the first 4 elements.
+
+
+
+
+# To reverse an array:
+
+x = [1,2,3,4,5]
+p x.reverse      # Answer will be [5,4,3,2,1]
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -118,7 +118,7 @@ puts Candy_Kingdom['Princess']['name']
 
 p Candy_Kingdom['Princess']           
 
-# Answer will be {"name"=>"Princess Bubblegum", "age"=>16, "job"=>"princess"}   (This will call out everything in the class.
+# Answer will be {"name"=>"Princess Bubblegum", "age"=>16, "job"=>"princess"}   (This will call out everything in the object)
 
 
 

@@ -1,0 +1,71 @@
+# Ternary operator ( ? ) = allows an expression to contain a mini if/else statement.
+# <condition> ? <result if condition is true>  : <result if condition is false>
+
+# Example: 
+
+age = 16 
+type = age < 18 ? "teen" : "adult"        # Answer is "teen" after you press Enter
+puts "You are a " + type               
+# "type" refers to a variable (in this case, "teen"). Answer will be "You are a teen."
+
+
+
+
+
+# Using UNLESS:
+
+age = 10 
+type = "child" if age < 18
+type = "adult" unless age < 18
+puts "You are a " + type       # Answer will be "You are a child"
+
+
+
+
+
+# Using ELSE:
+
+age = 10 
+  if age < 18
+    type = 'child'
+  else 
+    type = 'adult' 
+end
+puts "You are a " + type     # Answer will be "You are a child" 
+
+
+
+
+
+# Using Ternary Operator on a single line:
+
+age = 10
+puts "You are a " + (age < 18 ? "child" : "adult")
+# Answer is "You are a child" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

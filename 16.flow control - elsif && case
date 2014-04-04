@@ -1,0 +1,88 @@
+# Making several comparisons using the same variable:
+
+fruit = "apple"
+color = "red" if fruit == "apple"
+color = "yellow" if fruit == "banana"
+color = "orange" if fruit == "orange"
+
+
+
+
+
+# Using ELSIF: 
+
+fruit = "apple" 
+if fruit == "apple"
+  color = "red"
+if fruit == "banana"
+  color = "yellow" 
+if fruit == "orange" 
+  color = "orange"
+else
+  color = "no clue"
+end
+
+
+# ELSIF is similar to ELSE, except ELSIF creates a whole new comparison expression. 
+
+
+
+
+
+# Variant of using ELSIF: 
+
+fruit = "apple"
+
+case fruit
+when "apple" 
+color = "red"
+when "banana"
+color = "yellow"
+when "lime"
+color = "green"
+  else 
+  color = "no clue"
+end
+
+# Answer will be "red" because the fruit is apple.
+
+
+
+
+
+# CASE Shortcut:
+
+fruit = "apple" 
+color = case fruit
+
+when "apple"
+  "red"
+when "banana"
+  "yellow"
+when "lime"
+  "green"
+else
+  "no clue"
+end
+
+# Answer will be "red". 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

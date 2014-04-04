@@ -1,0 +1,52 @@
+# WHILE and UNTIL allows you to loop code based on the result of a comparison made on each loop.
+
+
+# Example of WHILE: 
+
+x = 10 
+while x < 100
+puts x
+x = x * 2
+end
+
+# Answer will be "10, 20, 40, 80"
+
+
+
+
+
+
+# UNTIL loops until a certain condition is met. 
+
+
+# Example of UNTIL:
+
+x = 20
+until x > 120
+puts x
+x = x * 2
+end
+
+# Answer will be "20, 40, 80"
+
+
+
+
+
+
+# Using WHILE and UNTIL in a single line:
+
+a = 5
+a = a * 2 until a > 100
+puts a
+
+# Answer will be 160. 
+
+
+
+
+
+
+
+
+

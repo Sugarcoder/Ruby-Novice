@@ -1,0 +1,100 @@
+# Ruby has a class called "Time". 
+# Time stores "times" as a number of microseconds
+
+# This input will tell you the current time: 
+
+puts Time.now
+
+# Answer will vary. 
+# For example, right now my computer told me it is 2014-04-06 00:04:43 -0700
+# 0700 stands for GMT.
+
+
+# This will show you how to add and subtract numbers of seconds: 
+
+
+puts Time.now
+puts Time.now - 10          # 10 is the number of seconds
+puts Time.now + 86400       # 86400 are the seconds for exactly one whole day. 
+
+
+
+
+
+# "Fixnum" class haleps with manipulating dates easier: 
+
+puts Time.now
+
+class Fixnum
+  def seconds
+  self
+end
+  def minutes
+  self * 60
+end
+  def hours
+  self * 60 * 60
+end
+  def days
+  self * 60 * 60 * 24
+end
+end
+
+puts Time.now
+puts Time.now + 10.minutes         # This will add 10 minutes to your time
+puts Time.now + 16.hours           # This will add 16 hours to your time
+puts Time.now - 7 days             # This will add 7 days to your time  
+
+
+
+
+# "Time" (class) allows you to create Time objects based on arbitrary dates:
+
+Time.local(year, month, day, hour, min, sec, msec)
+
+
+
+# This is how you can convert Time objects into an interger: 
+
+Time.gm(2007, 05).to_i               
+
+# Answer will be a string of numbers like "1177977600".
+
+
+
+
+# Converting epoch time into Time objects:
+
+epoch_time = Time.gm(2010, 05).to_i
+t = Time.at(epoch_time)        
+
+# This will give you the "normal looking" time again.
+# Example: 2010-04-30 17:00:00 -0700
+
+
+puts t.year, t.month, t.day   
+# Answer will be 2010    5   1 
+
+
+
+
+
+
+# hour
+# min
+# sec
+# usec
+# day
+# mday = "month" day
+# wday = The number of the day. Ex: Sunday is 0
+# yday = The number of the day in the year. Ex: 363
+# month
+# year
+# zone
+# utc? = returns True or False
+# gmt? = symbol for the utc? method for those who prefer to use GMT as the time.
+
+
+
+
+

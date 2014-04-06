@@ -1,0 +1,39 @@
+# Numbers belong to Fixnum, Bignum, Float and integer classes.
+
+# "String" are objects of the String class.
+
+# Symbols are objects of the Symbol class.
+
+
+
+# A number can become a string, a string can become a number.
+
+# Example: 
+
+puts "12" + "10"       # Answer will be 1210
+puts 12 + 10           # Answer will be 22
+
+
+
+# Converting objects to classes:
+
+
+puts "12".to_i + "10".to_i            # Answer will be 22
+puts 12.to_s + 10.to_s                # Answer will be 1210 
+
+
+
+
+# The String class provides the "to_i" and "to_f" methods. 
+
+# to_f = Float
+
+
+# to_sym = converts a string into a Symbol.
+
+# to_s = converts a symbol into a String
+
+
+
+
+

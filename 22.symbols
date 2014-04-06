@@ -1,0 +1,45 @@
+# Examples of symbols are like :blue, :good, :name.
+
+
+# Example of how it is used:
+
+
+current_situation = :good
+puts "Everything is fine" if current_situation == :good
+puts "Run and hide!" if current_situation == :bad
+
+
+# Answer will be "Everything is fine" since the symbol is :good
+
+
+
+
+# Symbols don't contain values or objects (like variables do).
+
+# Symbols are like constants with no value.
+
+
+
+
+
+# Replacing symbols with strings:
+
+current_situation = "good" 
+puts "Everything is fine" if current_situation == "good"
+puts "Run and hide!" if current_situation == "bad" 
+
+
+
+
+
+# Symbols are very useful when creating Hashes and you want a distinction between keys and values.
+
+# Example: 
+
+s = { :key => 'value' }
+person1 = { :name => "Bubbles", :age => 10, :gender = > :male }
+person2 = { :name => "BMO", :age => 5, :gender = > :female }
+
+
+
+

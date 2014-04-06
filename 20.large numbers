@@ -1,0 +1,26 @@
+# How chess was created...
+
+
+rice_on_square = 1
+64.times do |square|
+  puts "On square #{square + 1} are
+#{rice_on_square} grain(s)"
+  rice_on_square += 2
+end
+
+
+# Answer will be:
+# On square 1 are 1 grain(s)
+# On square 2 are 2 grain(s)...
+
+
+
+
+
+# Fixnum = represents easily managed (small) numbers
+
+# Bignum = represents big numbers 
+
+# Example for Bignum: 
+
+puts 34628362846293.class      # Result will be "Bignum" 

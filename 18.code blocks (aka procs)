@@ -1,0 +1,45 @@
+# EACH method accepts a single code block and runs each element of the array.
+# The code block is defined within { } or "do" / "end"
+
+# You can write your own methods to handle code blocks. 
+
+
+# each_vowel = a method that accepts a code block.
+
+
+# yield vowel = automatically detects any passed code block and passes control to it.
+
+
+
+# Example: 
+
+def each_vowel 
+  %w{a e i o u}.each { |vowel| yield vowel}
+end
+
+each_vowel { |vowel| puts vowel} 
+
+# Answer will be "aeiou => ["a", "e", "i", "o", "u"]
+
+
+
+
+
+# Only one code block can be passed at a time.
+
+# Code blocks may accept none, one or more parameters themselves. 
+
+
+
+
+# You can store code blocks within variables (using the lambda method): 
+
+# Example:
+
+print_parameter_to_screen = lambda { |x| puts x}
+print_parameter_to_screen.call(100)
+
+# Answer will be 100
+
+
+

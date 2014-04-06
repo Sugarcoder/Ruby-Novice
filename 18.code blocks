@@ -1,0 +1,12 @@
+# EACH method accepts a single code block and runs each element of the array.
+# The code block is defined within { } or "do" / "end"
+
+# You can write your own methods to handle code blocks. 
+
+# Example: 
+
+
+
+
+
+

@@ -1,4 +1,4 @@
-# If you have 2 arrays, you can combine them into one. Oh, joy!
+# If you have 2 arrays, you can combine them into one. 
 
 x = [1,2,3]
 y = ["a", "b", "c"]

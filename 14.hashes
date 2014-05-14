@@ -1,4 +1,4 @@
-# Hashes are collections of objects. 
+# Hashes ( => ) are collections of objects. 
 # Objects within a hash are given a key that points to them (like a dictionary).
 # There is no specific order, but has links between keys and values. 
 

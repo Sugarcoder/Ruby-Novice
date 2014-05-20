@@ -20,7 +20,8 @@ puts x[1]      # The answer is "cane" based on the index of that word.
 
 # Arrays don't need to be set up with predefined entries or have elements allocated already.
 
-# For example: 
+
+# Example: 
 
 x = [ ] 
 x << "Chocolate"
@@ -59,11 +60,5 @@ puts x.join     # Answer is "candyland"
 
 x = ["bunnies", "chicks"]
 puts x.join (', ')        # Answer is "bunnies, chicks"
-
-
-
-
-
-
 
 
